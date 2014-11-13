@@ -41,7 +41,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(-33.87264,151.2040603), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -54,7 +54,7 @@ function init() {
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#D3EAFF"
             }, {
                 "lightness": 17
             }]
@@ -62,7 +62,7 @@ function init() {
             "featureType": "landscape",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#EEEEEE"
             }, {
                 "lightness": 20
             }]
@@ -70,7 +70,7 @@ function init() {
             "featureType": "road.highway",
             "elementType": "geometry.fill",
             "stylers": [{
-                "color": "#000000"
+                "color": "#555555"
             }, {
                 "lightness": 17
             }]
@@ -78,7 +78,7 @@ function init() {
             "featureType": "road.highway",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#000000"
+                "color": "#444444"
             }, {
                 "lightness": 29
             }, {
@@ -88,7 +88,7 @@ function init() {
             "featureType": "road.arterial",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#555555"
             }, {
                 "lightness": 18
             }]
@@ -96,7 +96,7 @@ function init() {
             "featureType": "road.local",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#555555"
             }, {
                 "lightness": 16
             }]
@@ -104,14 +104,14 @@ function init() {
             "featureType": "poi",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#888888"
             }, {
                 "lightness": 21
             }]
         }, {
             "elementType": "labels.text.stroke",
             "stylers": [{
-                "visibility": "on"
+                "visibility": "off"
             }, {
                 "color": "#000000"
             }, {
@@ -122,7 +122,7 @@ function init() {
             "stylers": [{
                 "saturation": 36
             }, {
-                "color": "#000000"
+                "color": "#8FC73E"
             }, {
                 "lightness": 40
             }]
@@ -135,7 +135,7 @@ function init() {
             "featureType": "transit",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#FFFFFF"
             }, {
                 "lightness": 19
             }]
@@ -143,7 +143,7 @@ function init() {
             "featureType": "administrative",
             "elementType": "geometry.fill",
             "stylers": [{
-                "color": "#000000"
+                "color": "#888888"
             }, {
                 "lightness": 20
             }]
@@ -151,7 +151,7 @@ function init() {
             "featureType": "administrative",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#000000"
+                "color": "#777777"
             }, {
                 "lightness": 17
             }, {
@@ -169,7 +169,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(-33.87264,151.2040603);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
