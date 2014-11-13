@@ -1,0 +1,12 @@
+{
+  "name": "UXMasterclassSydney2015",
+  "version": "1.0.0",
+  "description": "UX Masterclass Sydney 2015",
+  "main": "Gruntfile.js",
+  "author": "kriss Heimanis",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
