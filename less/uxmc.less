@@ -21,20 +21,23 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 10px 0 15px;
+    margin: 25px 0 20px;
     font-weight: 400;
-    letter-spacing: 1px;
-    color: @textgrey;
+    letter-spacing: -1px;
+    color: @midgrey;
 }
 h2{
     font-size: 24px;
+}
+h3:first-child{
+    margin-top: 0;
 }
 h3{
     font-size: 18px;
 }
 
 p {
-    margin: 0 0 15px;
+    margin: 0 0 20px;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -98,20 +101,49 @@ a {
     }
 }
 
+.intro h2{
+    margin-top: 110px;
+    display: block;
+    background: rgba(141,86,52,0.6);
+    color: #FFF;
+    font-size: 38px;
+    padding: 10px 0 0 10px;
+    font-weight: 300;
+    span{
+        display: block;
+        width: 100%;
+        background: rgba(141,86,52,0.6);
+        margin: 10px -10px -10px 10px;
+        font-size: 22px;
+            padding: 10px;
+
+    }
+}
+
+#venue{
+    .green-heading{
+        margin-bottom: 0;
+    }
+}
 
 #map{
     z-index: -500;
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: block;
+    position: absolute !important;
 }
 #map-overlay{
-    height: 300px;
+    height: 400px;
     width: 100%;
     position: relative;
     display: block;
 }
-
+.overmap{
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    margin: 40px -20px 0 -20px;
+}
 
 
 .navbar-header{
@@ -119,9 +151,10 @@ a {
 }
 .navbar-brand{
     float: none;
+    clear: none;
+    padding: 0;
 }
 .brand-heading{
-    margin: 60px auto 10px auto;
     -webkit-transition: all .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: all .5s ease-in-out,padding .5s ease-in-out;
     transition: all .5s ease-in-out,padding .5s ease-in-out;
@@ -135,7 +168,7 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    background-color: @green;
+    background-color: @grey;
     .navbar-brand {
         font-weight: 700;
         &:focus {
@@ -180,6 +213,13 @@ a {
 }
 
 @media(min-width:767px) {
+    .brand-heading{
+        margin: 60px auto 10px auto;
+    }
+    .navbar-brand{
+        padding: 15px 0;
+        margin: 15px 0;
+    }
     .navbar-header{
         background: #FFF;
     }
@@ -214,6 +254,24 @@ a {
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid fade(@grey, 30%);
     }
+    .intro h2{
+        margin-top: 80px;
+        display: block;
+        background: rgba(141,86,52,0.6);
+        color: #FFF;
+        font-size: 46px;
+        padding: 10px 0 0 10px;
+        font-weight: 300;
+        span{
+            display: block;
+            width: 100%;
+            background: rgba(141,86,52,0.6);
+            margin: 10px -10px -10px 10px;
+            font-size: 22px;
+                padding: 10px;
+
+        }
+    }
 }
 
 
@@ -222,38 +280,19 @@ a {
 
 .intro-body{
     display: block;
-    padding-top: 140px;
-    height: 410px;
-    background: url(../img/nav-bg.jpg) no-repeat center 140px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    padding-top: 0px;
+    background: url(../img/nav-bg-sm.jpg) no-repeat center bottom;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    -o-background-size: 100%;
     width: 100%;
+    min-height: 410px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .content-section {
-    padding-top: 100px;
+    padding-top: 80px;
+    margin-top: -80px;
 }
 
 
@@ -261,10 +300,20 @@ a {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 150px;
-        margin-top: -140px;
+        padding-top: 110px;
+        margin-top: -100px;
     }
-
+    .intro-body{
+        display: block;
+        padding-top: 140px;
+        height: 410px;
+        background: url(../img/nav-bg.jpg) no-repeat center 110px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        width: 100%;
+    }
 }
 
 .btn {
@@ -313,6 +362,7 @@ ul.banner-social-buttons {
 }
 
 footer {
+    background: @green;
     padding: 50px 0;
     p {
         margin: 0;
